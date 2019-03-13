@@ -7,3 +7,4 @@ def index(request):
     investor = Investor.objects.get(investorid=1)
 
     return render(request, 'index.html', {'stocks': stocks, 'investor':investor})
+

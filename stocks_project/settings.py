@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'stocks_app'
+    'stocks_app',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
