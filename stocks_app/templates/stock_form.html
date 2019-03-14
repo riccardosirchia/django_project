@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} <title>Contact</title>{% endblock %}
+
+{% block main_content %}
+
+<div class="container">
+    <h2>Add new Stock Data</h2>
+    <form action="{% url 'stock_form' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">Add Stock</button>
+    </form>
+</div>
+
+{% endblock %}
